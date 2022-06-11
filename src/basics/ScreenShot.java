@@ -1,0 +1,112 @@
+package basics;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class ScreenShot {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+
+//		System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
+//		
+//		WebDriver driver = new ChromeDriver();
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+//		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+//		
+////		driver.get("http://tek-school.com/retail/");
+////		TakesScreenshot(driver,"firstNameSS");
+////		
+//		}
+//
+//	private static void TakesScreenshot(WebDriver driver, String fileName) throws IOException {
+//		// TODO Auto-generated method stub
+//		 String path= ".\\outcome\\";
+//		 File file =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//		 FileUtils.copyFile(file, new File (path+fileName+".png"));
+		 
+		System.setProperty("webdriver.gecko.driver",".\\drivers\\geckodriver.exe");
+		
+		WebDriver driver = new FirefoxDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		
+		driver.get("https://www.amazon.com/");
+		TakesScreenshot(driver,"fileScreen");
+		
+	}
+
+	public static void TakesScreenshot(WebDriver driver, String fileScreen1) throws IOException {
+		// TODO Auto-generated method stub
+		
+		String path =".\\outcome\\";
+		File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(file,new File( path+fileScreen1+".png"));
+		
+		//***********************class**************************
+//		package basics;
+//		​
+//		import java.io.File;
+//		import java.io.IOException;
+//		import java.util.concurrent.TimeUnit;
+//		​
+//		import org.apache.commons.io.FileUtils;
+//		import org.openqa.selenium.OutputType;
+//		import org.openqa.selenium.TakesScreenshot;
+//		import org.openqa.selenium.WebDriver;
+//		import org.openqa.selenium.chrome.ChromeDriver;
+//		​
+//		public class ScreenShot {
+//		​
+//			public static void main(String[] args) throws IOException {
+//				// TODO Auto-generated method stub
+//				// in order to store Screenshot file we need to have below jar file
+//				// apache.commons.io : we need to go to Maven central repository
+//				// https://mvnrepository.com/artifact/commons-io/commons-io/2.5
+//				// import Jar file into project build path
+//				// i need to create an outcome folder in project level to store Screenshots
+//				System.setProperty("webdriver.chrome.driver", ".\\drivers\\chromedriver.exe");
+//				WebDriver driver = new ChromeDriver();
+//				driver.manage().window().maximize();
+//				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//				driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+//		​
+//				driver.get("http://tek-school.com/retail");
+//				takeScreenShot(driver, "firstNameSS");
+//		​
+//			}
+//		​
+//			/*
+//			 * This method will take screenshot and it accepts two arguments, file name as
+//			 * string and Webdriver, anytime you call this method you need to pass these two
+//			 * parameters.
+//			 */
+//			public static void takeScreenShot(WebDriver driver, String fileName) throws IOException {
+//		​
+//				// String for location path
+//				String path = ".\\outcome\\";
+//				// we create object of File class and assign value of getScreenShotAs method
+//				File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//				// we use CopyFile method of FileUtils class to copy screenshot captured and
+//				// store in location
+//				// we defined in path
+//				FileUtils.copyFile(file, new File(path + fileName + ".png"));
+//		​
+//			}
+//		​
+//		}
+//		
+	}
+
+	
+}

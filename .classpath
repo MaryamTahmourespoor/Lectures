@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/client-combined-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/libs/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/libs/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/libs/guava-25.0-jre.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/libs/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/libs/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/OneDrive/Documents/client-combined-3.141.59.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/Downloads/webdrivermanager-3.6.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/Downloads/commons-io-2.5 (1).jar"/>
+	<classpathentry kind="lib" path="C:/Users/mantr/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.2/webdrivermanager-3.6.2.jar" sourcepath="C:/Users/mantr/.m2/repository/io/github/bonigarcia/webdrivermanager/3.6.2/webdrivermanager-3.6.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
+			<attribute name="maven.artifactId" value="webdrivermanager"/>
+			<attribute name="maven.version" value="3.6.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/mantr/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar" sourcepath="C:/Users/mantr/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="commons-io"/>
+			<attribute name="maven.artifactId" value="commons-io"/>
+			<attribute name="maven.version" value="2.11.0"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
